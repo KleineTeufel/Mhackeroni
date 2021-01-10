@@ -4,12 +4,40 @@
  * and open the template in the editor.
  */
 package vorii;
-
+import java.util.Scanner;
 /**
  *
  * @author pietro 
  */
+  
 public class Batterie {
+    public void metodo3(){
+        double kW,h,J,kWh;
+        int n;
+        Scanner in = new Scanner(System.in);
+       System.out.println("Sua altezza vuole calcora i kW-ora partendo dai Joule, o Watt?");
+       System.out.println("Per usare i Joule digiti 1, per usare invece i Watt e le ore digiti 2");
+       n=in.nextInt();
+       if(n==1){
+           System.out.println("la prego di inseriro i Joule, messere");
+           J=in.nextDouble();
+           kWh=J*3.6;
+           System.out.println("Eccole i kWh, appena sfornati "+kWh);
+       }
+       else{
+           if(n==2){
+             System.out.println("Inserica i kW, o mi mozzeranno la testa");
+             kW=in.nextDouble();
+             System.out.println("Ora vada avanti, con le ore");
+             h=in.nextDouble();
+             kWh=kW*h;
+             System.out.println("Per fortuna è stato così generoso, ora sono salvo. Ecco tenga i kWh, il suo premio per aver completato la quest "+kWh);
+           } 
+           else{
+               System.out.println("Ma dobbiamo facciamo scherziamo? Ho detto di digitare o uno o due. Per punizione sarà ucciso nel sonno da Cthulu");
+           }
+       }
+}
     
     public void metodo4(double Hp){
      /**
