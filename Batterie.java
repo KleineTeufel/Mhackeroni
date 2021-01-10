@@ -7,7 +7,7 @@ package vorii;
 
 /**
  *
- * @author pietro
+ * @author pietro 
  */
 public class Batterie {
     
@@ -18,6 +18,7 @@ public class Batterie {
         System.out.println("I Kw ottenuti sono ordunque "+E);
   }
     public void metodo6(int Ah, int A){
+        // buona la pasta
       int Tot, var;
       var=Ah/4;
       if(A>var){
