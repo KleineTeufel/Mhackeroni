@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
   
 public class Batterie {
-  public double 1Metodo(double I,double V){
+  public double Metodo1(double I,double V){
     double P=0;
     /**
      * I=Ampere
