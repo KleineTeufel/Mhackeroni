@@ -12,13 +12,21 @@ package vorii;
 public class Batterie {
     
     public void metodo4(double Hp){
-    
+     /**
+     * Questo metodo ti trasforma i cavalli in Kilowatt
+     *
+     *
+     */
         double E, N=0.745699872;
         E=Hp*N;
         System.out.println("I Kw ottenuti sono ordunque "+E);
   }
     public void metodo6(int Ah, int A){
         // buona la pasta
+        /**
+        *Questo metodo ti calcora i tempi di scarica di una batteria
+        *
+        */
       int Tot, var;
       var=Ah/4;
       if(A>var){
