@@ -11,6 +11,17 @@ import java.util.Scanner;
  */
   
 public class Batterie {
+  public double 1Metodo(double I,double V){
+    double P=0;
+    /**
+     * I=Ampere
+     * V=Volt
+     * P=Kilowatt
+     */
+    P=(I*V)/1000;
+    
+    return P;
+    }
     public void metodo3(){
         double kW,h,J,kWh;
         int n;
@@ -31,10 +42,10 @@ public class Batterie {
              System.out.println("Ora vada avanti, con le ore");
              h=in.nextDouble();
              kWh=kW*h;
-             System.out.println("Per fortuna Ë stato cosÏ generoso, ora sono salvo. Ecco tenga i kWh, il suo premio per aver completato la quest "+kWh);
+             System.out.println("Per fortuna √® stato cos√¨ generoso, ora sono salvo. Ecco tenga i kWh, il suo premio per aver completato la quest "+kWh);
            } 
            else{
-               System.out.println("Ma dobbiamo facciamo scherziamo? Ho detto di digitare o uno o due. Per punizione sar‡ ucciso nel sonno da Cthulu");
+               System.out.println("Ma dobbiamo facciamo scherziamo? Ho detto di digitare o uno o due. Per punizione sar√† ucciso nel sonno da Cthulu");
            }
        }
 }
@@ -51,11 +62,11 @@ public class Batterie {
   }
      public double metodo_5(double eff, int Co, int I_input, int I_consumo){
         double Tcarica;
-        //controllo del rapporto capacit‡/Ah
+        //controllo del rapporto capacit√†/Ah
         if (Co/I_input<=4){
             //formula tempo di carica
         Tcarica=(Co*eff/I_input-I_consumo);
-        System.out.print(" la batteria si caricher‡ in "+Tcarica);
+        System.out.print(" la batteria si caricher√† in "+Tcarica);
         System.out.println(" ore");
         }
         else{
@@ -77,7 +88,7 @@ public class Batterie {
       }
       else{
           Tot=Ah/A;
-          System.out.println("Il tempo nel quale essere improduttivi nell'attesa che si carichino le batterie √® pari a "+Tot);
+          System.out.println("Il tempo nel quale essere improduttivi nell'attesa che si carichino le batterie √É¬® pari a "+Tot);
       }
   } 
     public void metodo7(int W, int h){
